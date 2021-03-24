@@ -1,0 +1,10 @@
+Package: scAMACE
+Type: Package
+Title: scAMACE (integrative Analysis of single-cell Methylation, chromatin ACcessibility, and gene Expression)
+Version: 0.1.0
+Author: Jiaxuan WANGWU
+Maintainer: Jiaxuan WANGWU <wwjiaxuan@link.cuhk.edu.hk>
+Description: A model-based approach to the joint analysis of single-cell data on chromatin accessibility, gene expression and methylation.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
