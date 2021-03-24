@@ -1,5 +1,5 @@
 
-# scAMACE
+# scAMACE (R implementation)
 
 scAMACE (integrative Analysis of single-cell Methylation, chromatin ACcessibility, and gene Expression)
 
