@@ -11,7 +11,7 @@ You can install the released version of scAMACE from Github:
 
 ``` r
 library(devtools)
-devtools::install_github("WWJiaxuan/scAMACE")
+devtools::install_github("cuhklinlab/scAMACE")
 ```
 
 ## 2. Main Functions
