@@ -26,4 +26,4 @@ devtools::install_github("WWJiaxuan/scAMACE")
 
 ## 3. Datasets and Examples
 
-Please refer to the [vigenette](https://github.com/WWJiaxuan/scAMACE/tree/main/vignette) with several examples for a quick guide to scAMACE package.
+Please refer to the [vigenette](https://github.com/cuhklinlab/scAMACE/tree/main/vignette) with several examples for a quick guide to scAMACE package.
