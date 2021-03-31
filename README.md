@@ -14,7 +14,7 @@ library(devtools)
 devtools::install_github("cuhklinlab/scAMACE")
 ```
 
-In order to implement beta regression, package 'betareg' is also required:
+Package 'betareg' is also required for the implementation of beta regression:
 
 ```{r}
 install.packages('betareg')
