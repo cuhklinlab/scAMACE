@@ -16,7 +16,7 @@
 
 
 ## <a name="section2"></a>2. Example of scAMACE
-## Remarks: We demostrate usage of scAMACE through Application 1.
+#### Remarks: We demostrate usage of scAMACE through Application 1.
 ### 2.1 Load data and prepare for EM algorithm
 ```{r}
 library(scAMACE)
