@@ -195,7 +195,7 @@ table(met_cell_lb,mmp)
 
 
 ## <a name="section3"></a>3. Example of scAMACE(seperate)
-## Remarks: We demostrate usage of scAMACE through Application 1.
+#### Remarks: We demostrate usage of scAMACE through Application 1.
 ### 3.1 Load data and prepare for EM algorithm
 ```{r}
 library(scAMACE)
@@ -234,7 +234,7 @@ niter <- 200
 
 ### 3.2 scCAS data
 ```{r}
-# ATAC
+# scCAS
 #####
 ##-------------------------------------------------------------------------##
 k0 <- 2 # change to k0=1 if you want to get w_acc for beta regression
@@ -290,7 +290,7 @@ table(atac_cell_lb,amp)
 
 ### 3.3 scRNA-Seq data
 ```{r}
-# RNA
+# scRNA-Seq
 #####
 ##-------------------------------------------------------------------------##
 k0 <- 2 # change to k0=1 if you want to get w_rna for beta regression
@@ -346,7 +346,7 @@ table(rna_cell_lb,rmp)
 
 ### 3.4 sc-methylation data
 ```{r}
-# methylation
+# sc-methylation
 #####
 ##-------------------------------------------------------------------------##
 k0 <- 2 # change to k0=1 if you want to get w_met for beta regression
