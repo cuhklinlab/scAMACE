@@ -1,6 +1,13 @@
 # A quick guide to scAMACE
 
-## 1. Datasets
+#### We present the usage of scAMACE_py in the following sections:
+#### [Section 1: Introduction to datasets (Application 1: K562-GM12878 dataset)](#section1)
+#### [Section 2: scAMACE](#section2)
+#### [Section 3: scAMACE(seperate)](#section3)
+#### [Section 4: Beta regression](#section4)
+
+
+## <a name="section1"></a>1. Datasets
 ### Application 1: K562-GM12878 dataset
 `Feb7_2021_3Types_Data_rna_mean_1000_ratio.RData`: Application 1: K562-GM12878 dataset, including scCAS data, scRNA-Seq data and sc-methylation data.
 
@@ -8,7 +15,7 @@
 
 
 
-## 2. Example
+## <a name="section2"></a>2. Example of scAMACE
 ## Remarks: We demostrate usage of scAMACE through Application 1.
 ### 2.1 Load data and prepare for EM algorithm
 ```{r}
