@@ -415,5 +415,62 @@ table(met_cell_lb,mmp)
 ```
 
 
+## <a name="section4"></a>4. Example of beta regression
+Remarks: We demostrate usage of beta regression through Application 1.
+
+We first set $K = 1$ and use the model to estimate $\omega_{kg}^{rna}$, $\omega_{kg}^{acc}$ and $\omega_{kg}^{met}$ separately ([Section 3](#section3)), and then fix $\omega_{kg}^{rna}$, $\omega_{kg}^{acc}$ and $\omega_{kg}^{met}$ to estimate \{$\eta, \gamma, \tau, \delta, \theta, \phi^{acc}, \phi^{met}$\} by beta regression.
+
+### 4.1 Load data
+```{r}
+library(scAMACE)
+library(betareg) # for beta regression
+
+# result obtained by setting k0=1 and 'cal_M_step_met'
+temp_met <- temp
+
+# result obtained by setting k0=1 and 'cal_M_step_atac'
+temp_acc <- temp
+
+# result obtained by setting k0=1 and 'cal_M_step_rna'
+temp_rna <- temp
+
+
+w_acc <- temp_acc$w_acc
+w_exp <- temp_rna$w_exp
+w_met <- temp_met$w_met
+
+po <- ncol(w_acc)
+
+w_acc_link <- w_acc[,1:po]
+w_exp_link <- w_exp[,1:po]
+w_met_link <- w_met[,1:po]
+
+ca <- cut(w_acc[,1:po],breaks=seq(0,1,0.1))
+cr <- cut(w_exp[,1:po],breaks=seq(0,1,0.1))
+cm <- cut(w_met[,1:po],breaks=seq(0,1,0.1))
+
+
+```
+
+
+### 4.2 run beta regression
+```{r}
+###----------------------------------------------------------------------###
+## w_acc 
+acc_logit <- get_logit_beta(w_exp_link,w_acc_link,"quadratic")
+acc_logit$reg_para # eta, gamma, tau
+acc_logit$prec_para # phi_1
+
+
+###----------------------------------------------------------------------###
+## w_met
+met_logit <- get_logit_beta(w_exp_link,w_met_link,"linear")
+met_logit$reg_para # delta,theta
+met_logit$prec_para # phi_2
+
+
+```
+
+
 
 
