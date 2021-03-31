@@ -14,6 +14,13 @@ library(devtools)
 devtools::install_github("cuhklinlab/scAMACE")
 ```
 
+In order to implement beta regression, package 'betareg' is also required:
+
+```{r}
+install.packages('betareg')
+```
+
+
 ## 2. Main Functions
 
 `cal_M_step`: scAMACE expectation-maximization (EM) implementation, a model-based approach to the joint clustering of single-cell data on chromatin accessibility, gene expression and methylation.
