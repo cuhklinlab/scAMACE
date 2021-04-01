@@ -34,3 +34,7 @@ install.packages('betareg')
 ## 3. Datasets and Examples
 
 Please refer to the [vigenette](https://github.com/cuhklinlab/scAMACE/blob/main/vignette/vignette.md) with several examples for a quick guide to scAMACE package.
+
+## 4. Reference
+Jiaxuan Wangwu, Zexuan Sun, Zhixiang Lin: [scAMACE: Model-based approach to the joint analysis of single-cell data on chromatin accessibility, gene expression and methylation.](https://www.biorxiv.org/content/10.1101/2021.03.29.437485v1)
+
