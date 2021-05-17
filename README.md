@@ -31,7 +31,7 @@ install.packages('betareg')
 
 `cal_E_acc`: Perform E-step (i.e. calculate the expectations of missing data) for one iteration of scCAS data in the EM algorithm.
 
-`simData_3data`: Generate simulation data $\boldsymbol x$, $\boldsymbol y$ and $\boldsymbol z$.
+`simData_3data`: Generate simulation data x, y and z.
 
 ## 3. Datasets and Examples
 
