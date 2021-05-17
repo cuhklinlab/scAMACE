@@ -31,6 +31,8 @@ install.packages('betareg')
 
 `cal_E_acc`: Perform E-step (i.e. calculate the expectations of missing data) for one iteration of scCAS data in the EM algorithm.
 
+`simData_3data`: Generate simulation data $\boldsymbol x$, $\boldsymbol y$ and $\boldsymbol z$.
+
 ## 3. Datasets and Examples
 
 Please refer to the [vigenette](https://github.com/cuhklinlab/scAMACE/blob/main/vignette/vignette.md) with several examples for a quick guide to scAMACE package.
