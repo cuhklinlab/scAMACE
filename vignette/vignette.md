@@ -5,6 +5,7 @@
 #### [Section 2: scAMACE](#section2)
 #### [Section 3: scAMACE(seperate)](#section3)
 #### [Section 4: Beta regression](#section4)
+#### [Section 5: Generate simulation data](#section5)
 
 
 ## <a name="section1"></a>1. Datasets
@@ -471,6 +472,65 @@ met_logit$prec_para # phi_2
 
 ```
 
+
+## <a name="section5"></a>5. Example of generating simulation data
+
+```{r}
+library(scAMACE)
+
+n1 <- 900
+n2 <- 1100
+n3 <- 1000
+p <- 1000
+
+
+prop <- 0.05
+omega <- 0.8
+
+k1 <- 3
+k2 <- 3
+k3 <- 3
+
+# you may set some entries in Xprobs to be zero to simulate the unequal number of clusters
+Xprobs1 <- c(1/k1, 1/k1, 1/k1)
+Xprobs2 <- c(1/k2, 1/k2, 1/k2)
+Xprobs3 <- c(1/k3, 1/k3, 1/k3)
+
+shape_rna <- c(7, 1)
+scale_rna <- c(0.5, 1)
+
+shape_met1 <- c(0.5, 1)
+shape_met2 <- c(0.5, 10)
+
+
+qi <- rbind(rep(0.2, n1), 0)
+pi_rna <- rbind(rep(0.7, n2), 0.3)
+pi_met <- rbind(rep(0.4, n3), 0.7)
+
+
+alpha1 <- beta1 <- 2
+
+phi_1 <- 10
+eta <- -1
+gamma <-  7
+tau <- -2
+
+phi_2 <- 10
+delta <- -2
+theta <-  5
+
+
+sim_data <- simData_3data(n1=n1, n2=n2, n3=n3, p=p,
+                          Xprobs1=Xprobs1,Xprobs2=Xprobs2,Xprobs3=Xprobs3,
+                          shape_rna=shape_rna, scale_rna=scale_rna,
+                          shape_met1=shape_met1, shape_met2=shape_met2,
+                          qi=qi,pi_rna=pi_rna,pi_met=pi_met,  cutoff=10^-6,
+                          alpha1=alpha1,beta1=beta1,phi_1=phi_1,phi_2=phi_2,
+                          omega=omega,prop=prop)
+ls(sim_data)
+
+
+```
 
 
 
