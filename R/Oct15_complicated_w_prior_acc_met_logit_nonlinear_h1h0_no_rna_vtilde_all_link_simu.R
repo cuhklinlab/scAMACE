@@ -1,6 +1,4 @@
 
-library(magic)
-
 get_mu_quadratic <- function(w){
   f <- eta+gamma*w+tau*w^2
   mu1 <- 1/(1+exp(-f))
