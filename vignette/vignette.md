@@ -477,6 +477,7 @@ met_logit$prec_para # phi_2
 
 ```{r}
 library(scAMACE)
+library(magic) # to generate differential w_exp
 
 n1 <- 900
 n2 <- 1100
