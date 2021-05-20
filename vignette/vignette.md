@@ -492,7 +492,7 @@ k1 <- 3
 k2 <- 3
 k3 <- 3
 
-# you may set some entries in Xprobs to be zero to simulate the unequal number of clusters
+# you may set some entries in Xprobs to be zero to simulate the unequal numbers of clusters
 Xprobs1 <- c(1/k1, 1/k1, 1/k1)
 Xprobs2 <- c(1/k2, 1/k2, 1/k2)
 Xprobs3 <- c(1/k3, 1/k3, 1/k3)
