@@ -1,6 +1,6 @@
 # A quick guide to scAMACE
 
-#### We present the usage of scAMACE_py in the following sections:
+#### We present the usage of scAMACE in the following sections:
 #### [Section 1: Introduction to datasets (Application 1: K562-GM12878 dataset)](#section1)
 #### [Section 2: scAMACE](#section2)
 #### [Section 3: scAMACE(seperate)](#section3)
